@@ -2,17 +2,19 @@ import { IsString, Length, Min, IsNumber } from 'class-validator';
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
-export default class Payments {
+export default class Members {
   @PrimaryGeneratedColumn()
   id: number;
 
   @Column()
-  @IsNumber()
-  amount: number;
+  name: string;
 
   @Column()
-  member_id: number;
+  gender: string;
 
   @Column()
-  paid_at: string;
+  birth_date: string;
+
+  @Column()
+  created_at: string;
 }

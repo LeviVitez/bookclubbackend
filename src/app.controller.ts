@@ -1,6 +1,7 @@
 import { Body, Controller, Get, Post, Render } from '@nestjs/common';
 import { DataSource } from 'typeorm';
 import { AppService } from './app.service';
+import Members from './member.entity';
 import Payments from './Payments.entity';
 
 @Controller()
